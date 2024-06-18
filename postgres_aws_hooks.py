@@ -85,3 +85,6 @@ with DAG(
             ) 
             
 fetch_s3_file_task >> remove_null_values_task >> create_customer_credit_card_details_table_task >> insert_customer_credit_card_details_data_task 
+
+# run below command
+# airflow dags test pipe_line_name 2024-06-16
